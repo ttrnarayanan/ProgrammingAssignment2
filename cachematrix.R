@@ -12,8 +12,6 @@ makeCacheMatrix <- function(x = matrix()) {
        get_cache_m = get_cache_m)
 }
 
-## Write a short comment describing this function
-
 cacheSolve <- function(x) {                     ## Receive makeCacheMatrix from the caller.
   local_m<- x$get_cache_m()               ## Get the value for m in the cache environment and put it in a local m.
   if(!is.null(local_m)) {                 ## Check to see if m is NULL.  
